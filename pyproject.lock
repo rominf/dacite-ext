@@ -1,0 +1,29 @@
+[[package]]
+category = "main"
+description = "Simple creation of data classes from dictionaries."
+name = "dacite"
+optional = false
+platform = "*"
+python-versions = ">=3.6"
+version = "0.0.17"
+
+[package.dependencies]
+dataclasses = "*"
+
+[[package]]
+category = "main"
+description = "A backport of the dataclasses module for Python 3.6"
+name = "dataclasses"
+optional = false
+platform = "*"
+python-versions = "*"
+version = "0.6"
+
+[metadata]
+content-hash = "0cd5c7489e7fe7cfd8be1f00353026155a3cf9a55f1ab5bba5971085eea1ef78"
+platform = "*"
+python-versions = "^3.6"
+
+[metadata.hashes]
+dacite = ["0ffe829538ab905ddb2cc214f5476caa26ed0685b6945f30ff244b4705b82134", "2ea5fa19fb3c37e6aec11119acef05e7be86975cd88929ea2d2745a5278355d8"]
+dataclasses = ["454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f", "6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84"]

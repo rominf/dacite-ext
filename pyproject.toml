@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "dacite-ext"
+version = "0.1.2"
+description = "Dacite library extended"
+authors = ["Roman Inflianskas <infroma@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rominf/dacite-ext"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+dacite = "*"
+
+[tool.poetry.dev-dependencies]
