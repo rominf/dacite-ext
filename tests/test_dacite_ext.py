@@ -1,8 +1,22 @@
 from typing import Optional, List
 
-from dataclasses import dataclass, fields
+from dataclasses import dataclass, fields, field
 
 from dacite_ext import from_dict
+
+
+def test_from_dict_with_nested_data_classes_and_default_factory():
+    @dataclass
+    class X:
+        i: int
+
+    @dataclass
+    class Y:
+        x: X = field(default_factory=lambda: X(i=42))
+
+    result = from_dict(Y, {})
+
+    assert result == Y(x=X(i=42))
 
 
 # noinspection PyUnresolvedReferences

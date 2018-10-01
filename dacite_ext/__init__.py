@@ -18,6 +18,9 @@ def from_dict(data_class: Type[T], data: Data, config: Optional[Config] = None, 
     data classes, inherited from original data classes)
     :return: an instance of a data class
     """
+    # noinspection PyTypeHints
+    if isinstance(data, data_class):
+        return data
     config = config or Config()
     if add_extra_fields:
         data_class = _with_extra_fields(data_class=data_class, data=data, config=config)

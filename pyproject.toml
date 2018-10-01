@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dacite-ext"
-version = "0.1.2"
+version = "0.1.3"
 description = "Dacite library extended"
 authors = ["Roman Inflianskas <infroma@gmail.com>"]
 license = "MIT"
